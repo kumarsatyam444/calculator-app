@@ -1,47 +1,58 @@
 .app-container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 main {
   flex: 1;
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-/* Custom navbar styling */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .navbar {
-  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(22, 24, 29, 0.85) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px 0;
+  z-index: 10;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white !important;
+  text-transform: uppercase;
 }
 
-/* Custom footer styling */
 footer {
-  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d) !important;
-  padding: 20px 0 !important;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Add a container for the calculator with a glass effect */
-.glass-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(22, 24, 29, 0.85) !important;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 25px;
-  padding: 30px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0 !important;
+  z-index: 10;
 }

@@ -8,18 +8,25 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
+      <div className="floating-shapes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
       <Header />
+      
       <main>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-8 col-lg-6">
-              <div className="glass-container">
-                <Calculator />
-              </div>
+            <div className="col-md-5">
+              <Calculator />
             </div>
           </div>
         </div>
       </main>
+      
       <Footer />
     </div>
   );

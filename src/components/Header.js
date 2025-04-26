@@ -7,7 +7,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand href="#home">
           <i className="fas fa-calculator me-2"></i>
-          <span className="fw-bold">Calculation</span><span className="fw-light">Master</span>
+          Quantum <span className="fw-light">Calc</span>
         </Navbar.Brand>
       </Container>
     </Navbar>
