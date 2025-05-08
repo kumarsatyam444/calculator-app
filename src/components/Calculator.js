@@ -30,7 +30,7 @@ const Calculator = () => {
 
   const handleCalculate = () => {
     try {
-      // Replace × with * and ÷ with / for JavaScript evaluation
+      // Replace × with * and ÷ with / for JavaScript evaluation.
       const processedDisplay = display.replace(/×/g, '*').replace(/÷/g, '/').replace(/%/g, '/100*');
       const result = eval(processedDisplay);
       setEquation(`${display} = ${result}`);
@@ -87,7 +87,7 @@ const Calculator = () => {
       const currentValue = parseFloat(display);
       setMemory(currentValue);
     } catch (error) {
-      // Handle error
+      // Handle error.
     }
   };
 
